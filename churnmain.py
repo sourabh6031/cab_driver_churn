@@ -9,7 +9,7 @@ df = pd.read_csv('churn.csv')
 # Streamlit UI
 st.title("Let's make a churn prediction for the cab driver 🚕...")
 st.subheader("Sample Dataframe for reference")
-st.dataframe(df.head())
+st.dataframe(df.iloc[:,1:])
 
 # Load Models and Preprocessing Objects
 
